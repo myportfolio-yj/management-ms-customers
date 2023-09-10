@@ -15,7 +15,7 @@
     <quarkus.platform.version>3.3.1</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.1.2</surefire-plugin.version>
-    <sonar.token>sqp_8cc70cce2fae3c92180b3e6d849a204da727c186</sonar.token>
+    <sonar.token>sqp_ddefd31b47005d5823d267c82f79e660bcf07770</sonar.token>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -69,8 +69,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
           <configuration>
-            <source>17</source>
-            <target>17</target>
+            <release>17</release>
           </configuration>
       </plugin>
       <plugin>
