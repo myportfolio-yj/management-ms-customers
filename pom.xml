@@ -15,7 +15,7 @@
     <quarkus.platform.version>3.3.1</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.1.2</surefire-plugin.version>
-    <sonar.token>sqp_5180e4a5b97e025df8b7700701ecbff83a5a9bb2</sonar.token>
+    <sonar.token>sqp_ddefd31b47005d5823d267c82f79e660bcf07770</sonar.token>
   </properties>
   <dependencyManagement>
     <dependencies>
