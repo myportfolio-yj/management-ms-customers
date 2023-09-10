@@ -4,13 +4,15 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
-@Path("/hello")
+@Path("/api")
 public class GreetingResource {
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "Hola Mundo";
+    @Path("/hello")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response hello() {
+        return Response.ok("{\"message\": \"Hola Mundo\"}").build();
     }
 }

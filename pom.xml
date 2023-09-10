@@ -15,6 +15,7 @@
     <quarkus.platform.version>3.3.1</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.1.2</surefire-plugin.version>
+    <sonar.token>sqp_5180e4a5b97e025df8b7700701ecbff83a5a9bb2</sonar.token>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -30,11 +31,7 @@
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy-reactive</artifactId>
+      <artifactId>quarkus-resteasy</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -87,6 +84,14 @@
           </systemPropertyVariables>
         </configuration>
       </plugin>
+      <plugin>
+         <groupId>org.sonarsource.scanner.maven</groupId>
+         <artifactId>sonar-maven-plugin</artifactId>
+         <version>3.9.1.2184</version>
+         <configuration>
+          <sonar.login>sqp_06a928ed7cfc0d1437fc5d9ba186036ddb0598e7</sonar.login>
+        </configuration>
+       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
         <version>${surefire-plugin.version}</version>
