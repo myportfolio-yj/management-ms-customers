@@ -13,6 +13,6 @@ public class GreetingResource {
     @Path("/hello")
     @Produces(MediaType.APPLICATION_JSON)
     public Response hello() {
-        return Response.ok("{\"message\": \"hello world with github\"}").build();
+        return Response.ok("{\"message\": \"hello world with github1\"}").build();
     }
 }

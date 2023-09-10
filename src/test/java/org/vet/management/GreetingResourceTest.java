@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/api/hello")
           .then()
              .statusCode(200)
-             .body(is("{\"message\": \"hello world with github\"}"));
+             .body(is("{\"message\": \"hello world with github1\"}"));
     }
 
 }
