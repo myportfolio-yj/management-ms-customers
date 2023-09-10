@@ -15,7 +15,9 @@
     <quarkus.platform.version>3.3.1</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.1.2</surefire-plugin.version>
-    <sonar.token>sqp_ddefd31b47005d5823d267c82f79e660bcf07770</sonar.token>
+    <!---<sonar.token>sqp_ddefd31b47005d5823d267c82f79e660bcf07770</sonar.token>]-->
+    <sonar.organization>myportfolio-yj</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
   <dependencyManagement>
     <dependencies>
